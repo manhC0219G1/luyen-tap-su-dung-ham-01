@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id = "txt1">
+<input type="text" id = "txt2">
+<input type="button" value="Thuc hien" onclick="tinh()">
+<script>
+    function tinh() {
+        let a =parseInt(document.getElementById('txt1').value);
+        let b =parseInt(document.getElementById('txt2').value);
+        if(a>b){
+            alert(a+"lon hon "+b)
+        }else if(a<b){
+            let sum =a+b;
+            alert(sum)
+        }else{
+            alert("hai so bang nhau")
+        }
+    }
+</script>
+</body>
+</html>
